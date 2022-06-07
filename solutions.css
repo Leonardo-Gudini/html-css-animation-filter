@@ -80,3 +80,149 @@
     border-radius: 30px;
 
 }
+
+/* esercizio 9*/
+
+.ex-9-img{
+    transition: all 1.2s ease-out;
+}
+
+.ex-9-img:hover{
+    filter: grayscale(0.7) sepia(0.5);
+    transform: scale(1.5);
+    border-radius: 20px;
+}
+
+/* esercizio 10*/
+
+.ex-10-icon{
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(-360deg);
+    }
+}
+
+/* esercizio 11*/
+
+.ex-11-icon:hover{
+    animation: spin2 2s linear;
+}
+
+@keyframes spin2 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    75%{
+        transform: rotate(270deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+
+/* esercizio 12*/
+
+.ex-12-button:hover .ex-12-top-white{
+    animation: button1-top 2s linear;
+}
+
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: button1-bottom 2s linear;
+}
+
+@keyframes button1-top {
+    0%{
+        transform: translate(0,0);
+    }
+
+    50%{
+        transform: translate(180%,0);
+    }
+
+    100%{
+        transform: translate(0,0);
+    }
+}
+
+@keyframes button1-bottom {
+    0%{
+        transform: translate(0,0);
+    }
+
+    50%{
+        transform: translate(-150%,0);
+    }
+
+    100%{
+        transform: translate(0,0);
+    }
+}
+
+/*esercizio 13*/
+
+.ex-13-button:hover .ex-13-top-white{
+    animation: button2-top 2s linear;
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: button2-bottom 2s linear;
+}
+
+@keyframes button2-top{
+    0%{
+        transform: translate(0,0);
+    }
+
+    20%{
+        transform: translate(250%,0);
+    }
+
+    40%{
+        transform: translate(200%, 350%);
+    }
+
+    60%{
+        transform: translate(-50%,350%);
+    }
+
+    80%{
+        transform: translate(-50%,0%);
+    }
+
+    100%{
+        transform: translate(0,0);
+    }
+}
+
+@keyframes button2-bottom{
+    0%{
+        transform: translate(0,0);
+    }
+
+    20%{
+        transform: translate(-200%,0);
+    }
+
+     40%{
+        transform: translate(-200%, -350%);
+    }
+
+    60%{
+        transform: translate(100%,-350%);
+    }
+
+    80%{
+        transform: translate(100%,0%);
+    }
+
+    100%{
+        transform: translate(0,0);
+    } 
+}
